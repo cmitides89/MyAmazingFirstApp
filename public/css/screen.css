@@ -1,14 +1,30 @@
 body {
-  font-family: "Lucida Bright", Georgia, serif;  
+  font-family: "Lucida Bright", Georgia, serif; 
+  background-color:yellow; 
 }
 
 h1 {
   font-size: 32pt;
   text-align: center;
+  font-family: helvetica;
+  color:blue;
+  border: 2px solid green;
+  border-radius: 20px;
+  background-color:white;
+  width:500px;
+  left:50%;
 }
 
 img {
-  border: 2px solid green; 
+  border: 2px solid green;
+  height:300px;
+  width:400px; 
+  float:right;
+}
+img#chocolate{
+	height:300px;
+	width:350px;
+	margin-right:7px;
 }
 
 div.flash {

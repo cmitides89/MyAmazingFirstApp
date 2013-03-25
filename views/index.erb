@@ -2,12 +2,12 @@
 <html lang="en">
 
   <head>
-    <title>My Amazing First App</title>
+    <title>Vote Cupcakes</title>
     <link href="css/screen.css" type="text/css" rel="stylesheet" />
   </head>
   
   <body>
-    <h1>My Amazing First App</h1>
+    <h1>Vote cupcakes</h1>
     
     <% if flash[:notice] %>
       <div class="flash">
@@ -16,22 +16,33 @@
     <% end %>
     
     <div>
-      <img src="images/nightbus.jpg" title="Dan drunk on a nightbus in London" alt="Dan on a bus" />
+      <img src="http://3.bp.blogspot.com/_KuaAihD4oVk/S8k8CrqtWuI/AAAAAAAAMaU/RSkfn_Xhr_s/s1600/crazy-cupcakes.jpg" title="yummy cupcake" alt="cupcake" />
+      <img id="chocolate" src="http://www.52kitchenadventures.com/wp-content/uploads/2012/04/Gluten-free-chocolate-Nutella-cupcakes-close-up-21.jpg" title="nutella cupcake" alt="chocolate" />
     </div>
     
     <div>
       <form action="/submit" method="POST">
       
-        <h3>What do you think of this photo?</h3>
+        <h3>What do you think of these cupcakes?</h3>
         
         <div>
-          <label for="answer">Cool</label>
-          <input type="radio" name="answer" value="cool"/>
+          <label for="answer">yum</label>
+          <input type="radio" name="answer" value="yum"/>
+        </div>
         <div>
+          <label for="answer">Only the ones on the right look good</label>
+          <input type="radio" name="answer" value="right"
+        </div>
+
+        <div>
+          <label for="answer">Only the ones on the left look good</label>
+          <input type="radio" name="answer" value="left"
+        </div>
+
         
         <div>
-          <label for="answer">Not Cool</label>
-          <input type="radio" name="answer" value="not cool" />
+          <label for="answer">gross</label>
+          <input type="radio" name="answer" value="gross" />
         </div>
         
         <div>

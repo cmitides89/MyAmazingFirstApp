@@ -11,19 +11,19 @@ get '/' do
 end
 
 post '/submit' do
-  @message = "Someone thought your image was #{params[:answer]}"
+  @message = "Someone thought your cupcakes were #{params[:answer]}"
   
   # Change these to match your Twilio account settings 
-  @account_sid = "AC4af5936d0ed441b9f4578c1c951be519"
-  @auth_token = "d409d52e7f3d2ee809c94b4d68910013"
+  @account_sid = "ACf8e98f3fd96dbe29d0588dfcfa1b673d"
+  @auth_token = "73d0ca498d29a3143ce99c8cab050d09"
   
   # Set up a client to talk to the Twilio REST API
   @client = Twilio::REST::Client.new(@account_sid, @auth_token)
     
   @account = @client.account
   @sms = @account.sms.messages.create({
-    :from => '+13475351163', 
-    :to => '+16462837437',
+    :from => '+16464614467', 
+    :to => '+19174968239',
     :body => @message
   })
   
