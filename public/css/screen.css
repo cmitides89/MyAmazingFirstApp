@@ -12,7 +12,13 @@ h1 {
   border-radius: 20px;
   background-color:white;
   width:500px;
-  left:50%;
+  margin: 12px auto;
+  margin-bottom: 
+  
+}
+h3{
+	font-family:helvetica;
+	color:gray;
 }
 
 img {
@@ -33,3 +39,6 @@ div.flash {
   padding: 20px;
   width: 100%;
 }
+form{text-align: left; font-family: Courier;}
+
+input#submit{font-family: helvetica; font-size: 25px; color:white; border-radius: 100px;background-color:green; margin:0 auto;}
